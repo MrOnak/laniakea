@@ -17,7 +17,7 @@
 			body {
 				background-color: var(--col-bg);
 				font-family: monospace;
-        font-size: 2vw;
+        font-size: 4vw;
 			}
 			h1 {
 				text-align: center;
@@ -36,7 +36,7 @@
         color: var(--col-header-text);
       }
       header {
-        font-size: 1vw;
+        font-size: 2vw;
       }
 			article {
 				margin: 0 auto 20px;
@@ -56,3 +56,12 @@
 			article p {
 				color: var(--col-article-text);
 			}
+      
+      @media only screen and (min-width: 768px) {
+        body {
+          font-size: 2vw;
+        }
+        header {
+          font-size: 1vw;
+        }
+      }
