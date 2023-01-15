@@ -53,13 +53,16 @@
 				text-decoration: underline var(--col-article-shadow) dashed 1px;
 				text-underline-offset: 2px;
 			}
-			article p {
+			article p,li {
 				color: var(--col-article-text);
 			}
+      article li {
+        list-style-type: square;
+      }
       
       @media only screen and (min-width: 1080px) {
         body {
-          font-size: 2vw;
+          font-size: 1.5vw;
         }
         header {
           font-size: 1vw;
