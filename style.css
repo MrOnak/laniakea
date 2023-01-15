@@ -56,8 +56,12 @@
 			article p,li {
 				color: var(--col-article-text);
 			}
+      article ul {
+        padding-left: 1.2vw;
+      }
       article li {
         list-style-type: square;
+        padding-left: 0.5vw;
       }
       
       @media only screen and (min-width: 1080px) {
