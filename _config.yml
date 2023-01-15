@@ -1,0 +1,4 @@
+# jekyll config file to exclude some files from being published to github pages
+# https://jekyllrb.com/docs/configuration/options/
+
+exclude: [LICENSE, build.sh, Dockerfile, .dockerignore]
