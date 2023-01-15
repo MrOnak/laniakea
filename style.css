@@ -1,76 +1,75 @@
+/*
+  https://colorkit.co/color-palette-generator/e4ffdb-d6ffc8-abed95-182115-354554-7391ad-618755-86ba75/
+*/
+:root {
+  --col-bg: #354554;
+  --col-headline: #7391ad;
+  --col-article-shadow: #182115;
+  --col-article-bg: #618755;
+  --col-article-bg2: rgba(115, 145, 173, 0.2);
+  --col-article-h: #abed95;
+  --col-article-text: #d6ffc8;
+  --col-header-text: #86ba75;
+  --col-link: #e4ffdb;
+}
 
-			/*
-        https://colorkit.co/color-palette-generator/e4ffdb-d6ffc8-abed95-182115-354554-7391ad-618755-86ba75/
-			*/
-			:root {
-			  --col-bg: #354554;
-				--col-headline: #7391ad;
-				--col-article-shadow: #182115;
-				--col-article-bg: #618755;
-        --col-article-bg2: rgba(115, 145, 173, 0.2);
-				--col-article-h: #abed95;
-				--col-article-text: #d6ffc8;
-        --col-header-text: #86ba75;
-        --col-link: #e4ffdb;
-			}
+body {
+  padding-bottom: 5vw;
+  background-color: var(--col-bg);
+  font-family: monospace;
+  font-size: 4vw;
+}
+h1 {
+  text-align: center;
+  color: var(--col-headline);
+  font-family: monospace;
+  margin-top: 0;
+}
+a {color: var(--col-link);}
+header, nav {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  white-space: pre;
+  color: var(--col-header-text);
+}
+header {font-size: 2vw;}
+article {
+  margin: 0 auto 20px;
+  max-width: 800px;
+  padding: 5px 20px;
+  box-shadow: 0 5px 5px var(--col-article-shadow);
+  border-radius: 5px;
+  background-image: linear-gradient(var(--col-article-bg2), var(--col-bg));
+}
+article h2 {
+  color: var(--col-article-h);
+  font-family: monospace;
+  text-transform: capitalize;
+  text-decoration: underline var(--col-article-shadow) dashed 1px;
+  text-underline-offset: 2px;
+}
+article p,li {color: var(--col-article-text);}
+article ul {padding-left: 2.6vw;}
+article ul li {
+  padding-left: 3.7vw;
+  list-style-type: square;
+}
+article ol {padding-left: 6vw;}
+article ol li {padding-left: 0.2vw;}
+article blockquote {
+  margin-left: 0;
+  padding-left: 1.5vw;
+  border-left: 2px solid var(--col-article-h);
+  font-style: italic;
+  color: var(--col-headline);
+}
 
-			body {
-        padding-bottom: 5vw;
-				background-color: var(--col-bg);
-				font-family: monospace;
-        font-size: 4vw;
-			}
-			h1 {
-				text-align: center;
-				color: var(--col-headline);
-				font-family: monospace;
-        margin-top: 0;
-			}
-      a {color: var(--col-link);}
-      header, nav {
-        margin: 0 auto;
-        max-width: 800px;
-        text-align: center;
-        white-space: pre;
-        color: var(--col-header-text);
-      }
-      header {font-size: 2vw;}
-			article {
-				margin: 0 auto 20px;
-				max-width: 800px;
-				padding: 5px 20px;
-				box-shadow: 0 5px 5px var(--col-article-shadow);
-        border-radius: 5px;
-        background-image: linear-gradient(var(--col-article-bg2), var(--col-bg));
-			}
-			article h2 {
-				color: var(--col-article-h);
-				font-family: monospace;
-				text-transform: capitalize;
-				text-decoration: underline var(--col-article-shadow) dashed 1px;
-				text-underline-offset: 2px;
-			}
-			article p,li {color: var(--col-article-text);}
-      article ul {padding-left: 2.6vw;}
-      article ul li {
-        padding-left: 3.7vw;
-        list-style-type: square;
-      }
-      article ol {padding-left: 6vw;}
-      article ol li {padding-left: 0.2vw;}
-      article blockquote {
-        margin-left: 0;
-        padding-left: 1.5vw;
-        border-left: 2px solid var(--col-article-h);
-        font-style: italic;
-				color: var(--col-headline);
-      }
-      
-      @media only screen and (min-width: 1080px) {
-        body {font-size: 1.5vw;}
-        header {font-size: 1vw;}
-        article ul {padding-left: 1.2vw;}
-        article ul li {padding-left: 1.7vw;}
-        article ol {padding-left: 2.4vw;}
-        article ol li {padding-left: 0.5vw;}
-      }
+@media only screen and (min-width: 1080px) {
+  body {font-size: 1.5vw;}
+  header {font-size: 1vw;}
+  article ul {padding-left: 1.2vw;}
+  article ul li {padding-left: 1.7vw;}
+  article ol {padding-left: 2.4vw;}
+  article ol li {padding-left: 0.5vw;}
+}
