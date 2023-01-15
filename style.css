@@ -51,9 +51,18 @@
 			}
 			article p,li {color: var(--col-article-text);}
       article ul {padding-left: 1.2vw;}
-      article li {
+      article ul li {
+        padding-left: 1.7vw;
         list-style-type: square;
-        padding-left: 0.5vw;
+      }
+      article ol {padding-left: 2.4vw;}
+      article ol li {padding-left: 0.5vw;}
+      article blockquote {
+        margin-left: -0;
+        padding-left: 1.5vw;
+        border-left: 2px solid var(--col-article-h);
+        font-style: italic;
+				color: var(--col-headline);
       }
       
       @media only screen and (min-width: 1080px) {
