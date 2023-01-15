@@ -22,6 +22,7 @@
 				text-align: center;
 				color: var(--col-headline);
 				font-family: monospace;
+        margin-top: 0;
 			}
       a {
         color: var(--col-link);
