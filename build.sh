@@ -12,6 +12,7 @@ case $1 in
   start)
     docker build -t $imageName .
     docker run -d --name $containerName --rm -p 3000:3000 $imageName
+    #docker run -d --name $containerName --volume static:/home/static:ro --rm -p 3000:3000 $imageName
     ;;
   stop)
     docker stop $containerName
