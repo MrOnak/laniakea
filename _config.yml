@@ -4,8 +4,9 @@
 source: public
 destination: .
 
-#exclude: 
-#  - LICENSE
-#  - build.sh
-#  - Dockerfile
-#  - .dockerignore
+exclude: 
+  - .dockerignore
+  - .git
+  - Dockerfile
+  - LICENSE
+  - build.sh
