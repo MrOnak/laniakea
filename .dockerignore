@@ -1,5 +1,6 @@
 .git
 .dockerignore
 build.sh
+httpd.conf
 Dockerfile
 LICENSE

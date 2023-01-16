@@ -1,7 +1,8 @@
-FROM lipanski/docker-static-website:latest
+FROM busybox:musl
 
-# Copy your static files
-COPY static .
-
+# static files are being mounted from host
+#COPY static /home/static
+# Copy httpd config
+COPY httpd.conf /etc
 # add httpd.conf file
-CMD ["/busybox", "httpd", "-f", "-v", "-p", "3000", "-c", "httpd.conf"]
+CMD ["busybox", "httpd", "-f", "-v", "-p", "3000", "-h", "/home/static", "-c", "/etc/httpd.conf"]
