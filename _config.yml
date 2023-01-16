@@ -1,7 +1,7 @@
 # jekyll config file to exclude some files from being published to github pages
 # https://jekyllrb.com/docs/configuration/options/
 
-source: public
+source: static
 destination: .
 
 exclude: 
