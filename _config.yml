@@ -2,6 +2,8 @@
 # https://jekyllrb.com/docs/configuration/options/
 
 source: public
+destination: .
+
 #exclude: 
 #  - LICENSE
 #  - build.sh
