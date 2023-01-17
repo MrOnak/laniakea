@@ -4,7 +4,7 @@ imageName="busybox_static_httpd:latest"
 containerName=laniakea
 localWebroot=$(pwd)"/static"
 if [ $# -ne 1 ]; then
-  echo "Usage $0 (start|stop)"
+  echo "Usage $0 (build|start|stop)"
   exit 1;
 fi
   
@@ -21,7 +21,7 @@ case $1 in
     docker stop $containerName
     ;;
   *) 
-    echo "Usage $0 (start|stop)"
+    echo "Usage $0 (build|start|stop)"
     exit 1;
     ;;
 esac
