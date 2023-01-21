@@ -3,7 +3,7 @@
 imageName="busybox_static_httpd:latest"
 containerName=laniakea
 localWebroot=$(pwd)"/static"
-  
+
 case $1 in
   build)
     docker build -t $imageName .
