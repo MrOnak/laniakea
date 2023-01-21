@@ -73,3 +73,12 @@ article blockquote {
   article ol {padding-left: 2.4vw;}
   article ol li {padding-left: 0.5vw;}
 }
+
+@media only screen and (min-width: 1440px) {
+  body {font-size: 1.3vw;}
+  header {font-size: 1vw;}
+  article ul {padding-left: 1.2vw;}
+  article ul li {padding-left: 1.7vw;}
+  article ol {padding-left: 2.4vw;}
+  article ol li {padding-left: 0.5vw;}
+}
