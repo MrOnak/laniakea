@@ -16,7 +16,7 @@
 body {
   padding-bottom: 5vw;
   background-color: var(--col-bg);
-  font-family: monospace;
+  font-family: sans-serif;
   font-size: 4vw;
 }
 h1 {
@@ -33,7 +33,10 @@ header, nav {
   white-space: pre;
   color: var(--col-header-text);
 }
-header {font-size: 2vw;}
+header {
+  font-size: 2vw;
+  font-family: monospace;
+}
 article {
   margin: 0 auto 20px;
   max-width: 800px;
@@ -41,6 +44,7 @@ article {
   box-shadow: 0 5px 5px var(--col-article-shadow);
   border-radius: 5px;
   background-image: linear-gradient(var(--col-article-bg2), var(--col-bg));
+  font-weight: lighter;
 }
 article h2 {
   color: var(--col-article-h);
@@ -63,6 +67,9 @@ article blockquote {
   border-left: 2px solid var(--col-article-h);
   font-style: italic;
   color: var(--col-headline);
+}
+article pre {
+  color: var(--col-article-h);
 }
 
 @media only screen and (min-width: 1080px) {
