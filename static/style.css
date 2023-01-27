@@ -69,12 +69,15 @@ article blockquote {
   color: var(--col-headline);
 }
 article pre {
+  font-size: 2vw;
+  font-weight: normal;
   color: var(--col-article-h);
 }
 
 @media only screen and (min-width: 1080px) {
   body {font-size: 1.5vw;}
   header {font-size: 1vw;}
+  article pre {font-size: 1.2vw;}
   article ul {padding-left: 1.2vw;}
   article ul li {padding-left: 1.7vw;}
   article ol {padding-left: 2.4vw;}
@@ -84,6 +87,7 @@ article pre {
 @media only screen and (min-width: 1440px) {
   body {font-size: 1.3vw;}
   header {font-size: 1vw;}
+  article pre {font-size: 1.0vw;}
   article ul {padding-left: 1.2vw;}
   article ul li {padding-left: 1.7vw;}
   article ol {padding-left: 2.4vw;}
